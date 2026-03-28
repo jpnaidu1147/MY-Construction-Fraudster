@@ -2,6 +2,14 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-warning: #FFC107;
+  --color-warning-dark: #E0A800;
+  --color-dark: #121212;
+  --color-charcoal: #1E1E1E;
+  --color-alert: #C62828;
+  --color-alert-dark: #8E0000;
+  --color-light: #CCCCCC;
 }
 
 html {
