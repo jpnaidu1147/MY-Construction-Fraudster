@@ -30,10 +30,10 @@ export default function App() {
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 flex items-center gap-2">
-              <FileText className="h-6 w-6 text-blue-600" />
-              <span className="font-semibold text-lg tracking-tight hidden sm:block text-slate-800">
-                Case Documentation
+            <div className="flex-shrink-0 flex items-center gap-2 min-w-0">
+              <FileText className="h-6 w-6 text-blue-600 shrink-0" />
+              <span className="font-semibold text-base lg:text-lg tracking-tight hidden sm:block text-slate-800 truncate">
+                Residential Construction Experience with M&Y Construction Builders Bangalore | Case Documentation
               </span>
             </div>
             <div className="hidden md:flex space-x-6 overflow-x-auto">
@@ -66,8 +66,8 @@ export default function App() {
               M&Y Construction Builders Experience <br className="hidden sm:block" />
               <span className="text-blue-300">Bangalore Case Documentation</span>
             </h1>
-            <p className="text-xl text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-              A factual <strong className="font-bold text-red-400">construction contractor Bangalore review</strong> and <strong className="font-bold text-red-400">contractor delay case study India</strong>, documenting a residential construction project to raise awareness about <strong className="font-bold text-red-400">residential construction issues Bangalore</strong>.
+            <p className="text-lg sm:text-xl text-slate-200 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
+              This case study documents a residential construction experience in Bangalore involving M&Y Construction Builders. It highlights common issues faced by homeowners such as project delays, mismatch between payment and work progress, and construction quality concerns. This documentation is intended to help others researching construction contractors in Bangalore make informed decisions and avoid similar challenges.
             </p>
             <a 
               href="#summary" 
@@ -283,10 +283,10 @@ export default function App() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div 
                 className="group relative aspect-video bg-slate-100 rounded-lg border border-slate-200 overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV")}
+                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/10mQhmu44R5E8YvYh_mEahPUTksCUDRUp")}
               >
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV" 
+                  src="https://lh3.googleusercontent.com/d/10mQhmu44R5E8YvYh_mEahPUTksCUDRUp" 
                   alt="Site condition" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   referrerPolicy="no-referrer"
