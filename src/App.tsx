@@ -38,6 +38,7 @@ export default function App() {
             </div>
             <div className="hidden md:flex space-x-6 overflow-x-auto">
               <a href="#summary" className="text-light hover:text-warning text-sm font-bold uppercase tracking-wider transition-colors">Summary</a>
+              <a href="#agreement" className="text-light hover:text-warning text-sm font-bold uppercase tracking-wider transition-colors">Agreement</a>
               <a href="#timeline" className="text-light hover:text-warning text-sm font-bold uppercase tracking-wider transition-colors">Timeline</a>
               <a href="#payments" className="text-light hover:text-warning text-sm font-bold uppercase tracking-wider transition-colors">Payments</a>
               <a href="#quality" className="text-light hover:text-warning text-sm font-bold uppercase tracking-wider transition-colors">Quality</a>
@@ -70,8 +71,9 @@ export default function App() {
             />
           </div>
 
-          <div className="inline-block bg-warning text-dark font-black px-4 py-1.5 rounded-sm text-sm sm:text-base tracking-[0.2em] uppercase mb-8 shadow-md">
-            Residential Construction Case Documentation
+          <div className="inline-block bg-warning text-dark font-black px-4 py-1.5 rounded-sm text-sm sm:text-base tracking-[0.2em] uppercase mb-8 shadow-md text-center">
+            PROJECT DELAY & EXECUTION FAILURE. <br />
+            CONSTRUCTION SERVICE CONCERNS DOCUMENTED
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-white mb-6 uppercase leading-[1.1] drop-shadow-lg">
@@ -196,7 +198,32 @@ export default function App() {
           </div>
         </section>
 
-        {/* 3. TIMELINE SECTION */}
+        {/* 3. LEGAL AGREEMENT SECTION */}
+        <section id="agreement" className="scroll-mt-24">
+          <div className="flex items-center gap-3 mb-8 border-b-2 border-charcoal pb-4">
+            <FileText className="h-8 w-8 text-alert" />
+            <h2 className="text-3xl font-black tracking-tight text-charcoal uppercase">Construction Agreement</h2>
+          </div>
+
+          <div className="bg-white rounded-md shadow-lg border-2 border-charcoal overflow-hidden relative">
+            <div className="absolute top-0 left-0 w-2 h-full bg-warning"></div>
+            <div className="p-6 sm:p-8 pl-8 sm:pl-10">
+              <p className="text-charcoal mb-6 leading-relaxed font-medium text-lg">
+                Below is the embedded legal copy of the construction agreement signed with <strong className="font-black text-alert uppercase tracking-wide">M&Y Construction Builders</strong>.
+              </p>
+              <div className="w-full h-[600px] sm:h-[800px] border-4 border-charcoal rounded-md overflow-hidden relative bg-slate-100">
+                <iframe 
+                  src="https://drive.google.com/file/d/1e8iSht2Fvu1k5ZUwv8cM149xbb8gjWF0/preview" 
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  title="Construction Agreement PDF"
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. TIMELINE SECTION */}
         <section id="timeline" className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-8 border-b-2 border-charcoal pb-4">
             <Calendar className="h-8 w-8 text-alert" />
@@ -315,13 +342,13 @@ export default function App() {
               </li>
             </ul>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pl-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pl-4">
               <div 
                 className="group relative aspect-video bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/10mQhmu44R5E8YvYh_mEahPUTksCUDRUp")}
+                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1qWuEzemaUOxKAUq9ryJpIyltV4FmvmLy")}
               >
                 <img 
-                  src="https://lh3.googleusercontent.com/d/10mQhmu44R5E8YvYh_mEahPUTksCUDRUp" 
+                  src="https://lh3.googleusercontent.com/d/1qWuEzemaUOxKAUq9ryJpIyltV4FmvmLy" 
                   alt="Site condition" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
@@ -332,30 +359,44 @@ export default function App() {
               </div>
               <div 
                 className="group relative aspect-video bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV")}
+                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/18O2BCvSTRy2IKZmfYwGWNlZa_uSuj3y4")}
               >
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV" 
-                  alt="Construction progress" 
+                  src="https://lh3.googleusercontent.com/d/18O2BCvSTRy2IKZmfYwGWNlZa_uSuj3y4" 
+                  alt="Incomplete Work" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
-                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Construction progress image</span>
+                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Incomplete Work</span>
                 </div>
               </div>
               <div 
                 className="group relative aspect-video bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV")}
+                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1qcswuDx2H2hY4Z1NQZy2dSfb3WIg0dmF")}
               >
                 <img 
-                  src="https://lh3.googleusercontent.com/d/1uu9p7coekkIB9GcjTB6pSvr-3aSMO3eV" 
-                  alt="Observed surface irregularities" 
+                  src="https://lh3.googleusercontent.com/d/1qcswuDx2H2hY4Z1NQZy2dSfb3WIg0dmF" 
+                  alt="Finishing Inconsistencies" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
-                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Observed surface irregularities</span>
+                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Finishing Inconsistencies</span>
+                </div>
+              </div>
+              <div 
+                className="group relative aspect-video bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
+                onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/112oFgfcY7t6-M8hNnUU80jTToUo60iS2")}
+              >
+                <img 
+                  src="https://lh3.googleusercontent.com/d/112oFgfcY7t6-M8hNnUU80jTToUo60iS2" 
+                  alt="Structural Imperfections" 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
+                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Structural Imperfections</span>
                 </div>
               </div>
             </div>
