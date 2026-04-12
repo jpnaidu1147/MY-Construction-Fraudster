@@ -18,7 +18,8 @@ import {
   ArrowDown,
   UploadCloud,
   Image as ImageIcon,
-  X
+  X,
+  User
 } from 'lucide-react';
 
 export default function App() {
@@ -266,7 +267,7 @@ export default function App() {
 
               <div className="relative pl-8">
                 <div className="absolute -left-[14px] top-1.5 h-6 w-6 rounded-sm bg-alert border-4 border-charcoal animate-pulse" />
-                <h3 className="text-lg font-black text-alert uppercase tracking-wide">March 2026</h3>
+                <h3 className="text-lg font-black text-alert uppercase tracking-wide">APRIL 2026</h3>
                 <p className="mt-1 font-bold text-charcoal bg-red-50 p-3 rounded border border-alert inline-block">Work incomplete, activity stopped, contractor cited financial constraints</p>
               </div>
 
@@ -330,11 +331,11 @@ export default function App() {
               </li>
               <li className="flex items-start gap-4 bg-slate-50 p-3 rounded border border-slate-200">
                 <div className="h-2 w-2 rounded-none bg-alert mt-2 shrink-0 rotate-45" />
-                <span className="font-bold text-lg">Finishing inconsistencies</span>
+                <span className="font-bold text-lg">Poor quality of work</span>
               </li>
               <li className="flex items-start gap-4 bg-slate-50 p-3 rounded border border-slate-200">
                 <div className="h-2 w-2 rounded-none bg-alert mt-2 shrink-0 rotate-45" />
-                <span className="font-bold text-lg">Visible structural imperfections</span>
+                <span className="font-bold text-lg">Unprofessional work and lack of structural knowledge</span>
               </li>
               <li className="flex items-start gap-4 bg-slate-50 p-3 rounded border border-slate-200">
                 <div className="h-2 w-2 rounded-none bg-alert mt-2 shrink-0 rotate-45" />
@@ -377,12 +378,12 @@ export default function App() {
               >
                 <img 
                   src="https://lh3.googleusercontent.com/d/1qcswuDx2H2hY4Z1NQZy2dSfb3WIg0dmF" 
-                  alt="Finishing Inconsistencies" 
+                  alt="Poor quality of work" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
-                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Finishing Inconsistencies</span>
+                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Poor quality of work</span>
                 </div>
               </div>
               <div 
@@ -391,12 +392,12 @@ export default function App() {
               >
                 <img 
                   src="https://lh3.googleusercontent.com/d/112oFgfcY7t6-M8hNnUU80jTToUo60iS2" 
-                  alt="Structural Imperfections" 
+                  alt="Unprofessional work and lack of Structural Knowledge" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
-                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Structural Imperfections</span>
+                  <span className="text-xs font-bold text-warning uppercase tracking-widest">Unprofessional work and lack of Structural Knowledge</span>
                 </div>
               </div>
             </div>
@@ -547,6 +548,47 @@ export default function App() {
           </div>
         </section>
 
+        {/* 9.5 PROJECT ASSOCIATED PARTY SECTION */}
+        <section className="scroll-mt-24">
+          <div className="flex items-center gap-3 mb-8 border-b-2 border-charcoal pb-4">
+            <User className="h-8 w-8 text-alert" />
+            <h2 className="text-3xl font-black tracking-tight text-charcoal uppercase">Project Associated Party (For Identification Purposes Only)</h2>
+          </div>
+
+          <div className="bg-white rounded-md shadow-lg border-2 border-charcoal p-6 sm:p-8 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-2 h-full bg-warning"></div>
+            
+            <div className="flex flex-col md:flex-row gap-8 pl-4">
+              <div className="flex-1 space-y-4 text-charcoal text-lg">
+                <p>The individual shown below is associated with the execution of this residential construction project based on available project records, communications, and transactions.</p>
+                <p>This reference is provided strictly for identification purposes in the context of this documented project.</p>
+                <p>No inference, allegation, or conclusion is made through the inclusion of this image.</p>
+                <p>All observations, statements, and project details presented on this website are based solely on documented records, site inspections, and verifiable communication history.</p>
+                <p>The concerned individual is invited to provide clarification or response to any of the documented information. Any verifiable response may be incorporated for completeness and transparency.</p>
+              </div>
+              <div className="w-full md:w-1/3 shrink-0">
+                <div 
+                  className="group relative aspect-square bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1z4OaJlYgyZBkbwWyUg0hIf-khp-EatRF")}
+                >
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1z4OaJlYgyZBkbwWyUg0hIf-khp-EatRF" 
+                    alt="Project Associated Party" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
+                    <span className="text-xs font-bold text-warning uppercase tracking-widest">Project Associated Party</span>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-500 mt-2 text-center italic">
+                  Image included for identification purposes in relation to the documented construction project. No representation is made beyond this context.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 10. CURRENT STATUS SECTION */}
         <section className="scroll-mt-24">
           <div className="flex items-center gap-3 mb-8 border-b-2 border-charcoal pb-4">
@@ -570,6 +612,46 @@ export default function App() {
                 <span className="font-bold text-lg">Further steps under consideration</span>
               </li>
             </ul>
+          </div>
+        </section>
+
+        {/* 10.5 POLICE COMPLAINT RECORD SECTION */}
+        <section className="scroll-mt-24">
+          <div className="flex items-center gap-3 mb-8 border-b-2 border-charcoal pb-4">
+            <FileText className="h-8 w-8 text-alert" />
+            <h2 className="text-3xl font-black tracking-tight text-charcoal uppercase">Police Complaint Record (NCR) – Documentation Reference</h2>
+          </div>
+
+          <div className="bg-white rounded-md shadow-lg border-2 border-charcoal p-6 sm:p-8 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-2 h-full bg-warning"></div>
+            
+            <div className="flex flex-col md:flex-row gap-8 pl-4">
+              <div className="flex-1 space-y-4 text-charcoal text-lg">
+                <p>A Non-Cognizable Report (NCR) has been recorded with the concerned police authorities based on a complaint submitted regarding the current construction project.</p>
+                <p>The attached document reflects acknowledgment of the complaint and forms part of the documented sequence of events.</p>
+                <p>This record is presented strictly for transparency and documentation purposes. It does not constitute any finding of guilt or legal determination.</p>
+                <p>Certain personal details have been redacted to protect privacy.</p>
+              </div>
+              <div className="w-full md:w-1/3 shrink-0">
+                <div 
+                  className="group relative aspect-[3/4] bg-charcoal rounded border-2 border-charcoal overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage("https://lh3.googleusercontent.com/d/1dXjMnXV8f-Sy9Z5ruujpEvAscuvQQMpe")}
+                >
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1dXjMnXV8f-Sy9Z5ruujpEvAscuvQQMpe" 
+                    alt="Police Complaint Record (NCR)" 
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-charcoal/90 p-3 border-t-2 border-warning">
+                    <span className="text-xs font-bold text-warning uppercase tracking-widest">NCR Document</span>
+                  </div>
+                </div>
+                <p className="text-sm font-bold text-alert mt-3 text-center leading-snug">
+                  Disclaimer: The NCR is a record of a complaint filed and acknowledged by the police authorities. It is shared in good faith for documentation and transparency. No conclusions or allegations are drawn solely from this document.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
